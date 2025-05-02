@@ -1,107 +1,184 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Стоматологическая клиника</title>
-    <link rel="icon" href="assets/icons/зуб.svg" type="images/svg" />
-    <link rel="stylesheet" href="assets/style/normalize.css" />
-    <link rel="stylesheet" href="assets/style/style.css" />
+    <title>Bootstrap</title>
+    <link
+      href="assets/bootstrap/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="icon"
+      href="assets/icons/align-left-svgrepo-com.svg"
+      type="images/svg"
+    />
   </head>
 
   <body>
-    <div class="header">
-      <img class="img_header" src="assets/icons/зуб.svg" alt="Зуб" />
-      <nav class="menu">
-        <ul>
-          <li><a href="#">Услуги</a></li>
-          <li><a href="#">О нас</a></li>
-          <li><a href="#">Акции</a></li>
-          <li><a href="#">Команда</a></li>
-          <li><a href="#">Статьи</a></li>
-          <li><a href="#">Отзывы</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-dark">
+        <div
+          class="container-fluid d-flex justify-content-between pe-5 ps-5 column-gap-5"
+        >
+          <a class="navbar-brand text-white ps-5" href="#">Start Bootstrap</a>
+          <button
+            class="navbar-toggler ps-5"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse flex-grow-0 pe-5"
+            id="navbarNavAltMarkup"
+          >
+            <div class="navbar-nav">
+              <a class="nav-link active text-white" aria-current="page" href="#"
+                >Home</a
+              >
+              <a class="nav-link text-white" href="#">About</a>
+              <a class="nav-link text-white" href="#">Services</a>
+              <a class="nav-link disabled text-white" aria-disabled="true"
+                >Contact</a
+              >
+            </div>
+          </div>
+        </div>
       </nav>
-      <button class="nav_burger">
-        <img src="assets/icons/hamburger.svg" alt="Меню" />
-      </button>
-    </div>
-    <div class="main">
-      <p class="p-main">
-        г. Новосибирск, ул. Красный проспект, 220 корп. 10, 2 этаж, офис 207.
-      </p>
-      <p class="p-main">Время работы: ежедневно с 9:00 до 21:00.</p>
-      <div class="img-main">
-        <img src="assets/images/perlamutr.png" class="img1" alt="perlamutr" />
-        <img
-          src="assets/images/стоматологическая_клиника.png"
-          class="img2"
-          alt="Cтоматологическая клиника"
-        />
-        <button class="button">ПОЗВОНИТЬ</button>
-      </div>
-    </div>
+    </header>
 
-    <div class="services">
-      <h1>Услуги</h1>
-      <div class="services-1">
-        <img src="assets/images/диагностика.svg" alt="Диагностика" />
-        <p>Диагностика</p>
-      </div>
-      <div class="services-2">
-        <img src="assets/images/отбеливание.svg" alt="Отбеливание" />
-        <p>Отбеливание</p>
-      </div>
-      <div class="services-3">
-        <img src="assets/images/реставрация.svg" alt="Реставрация" />
-        <p>Реставрация</p>
-      </div>
-      <div class="services-4">
-        <img src="assets/images/протезирование.svg" alt="Протезирование" />
-        <p>Протезирование</p>
-      </div>
-      <div class="services-5">
-        <img src="assets/images/хирургия.svg" alt="Хирургия" />
-        <p>Хирургия</p>
-      </div>
-      <div class="services-6">
-        <img src="assets/images/имплантация.svg" alt="Имплантация" />
-        <p>Имплантация</p>
-      </div>
-      <div class="services-7">
-        <img src="assets/images/лечение_кариеса.svg" alt="Лечение кариеса" />
-        <p>Лечение кариеса</p>
-      </div>
-      <div class="services-8">
-        <img src="assets/images/профилактика.svg" alt="Профилактика" />
-        <p>Профилактика</p>
-      </div>
-      <div class="services-9">
-        <img src="assets/images/ортодонтия.svg" alt="Ортодонтия" />
-        <p>Ортодонтия</p>
-      </div>
-      <div class="services-10">
-        <img src="assets/images/эндодонтия.svg" alt="Эндодонтия" />
-        <p>Эндодонтия</p>
-      </div>
-    </div>
+    <main>
+      <section>
+        <div class="container bg-body-secondary mt-4 mb-4 pb-5 px-4 pt-4">
+          <div class="row">
+            <div class="col">
+              <h1>A Warm Welcome!</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa,
+                ipsam, eligendi, in quo sunt possimus non incidunt odit vero
+                aliquid similique quaerat nam nobis illo aspernatur vitae fugiat
+                numquam repellat.
+              </p>
+            </div>
+          </div>
+          <button type="button" class="btn btn-primary">Call to action!</button>
+        </div>
+      </section>
+
+      <section>
+        <div class="container p-0">
+          <div class="row mb-4">
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="assets/images/500х325.png"
+                  class="card-img-top"
+                  alt="500x325"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolo sit amet, consectetur adipisicing elit.
+                    Sapiente esse necessitatibus neque.
+                  </p>
+                </div>
+                <div
+                  class="container bg-secondary-subtle pt-2 pb-2 text-center"
+                >
+                  <a href="#" class="btn btn-primary">Find Out More!</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="assets/images/500х325.png"
+                  class="card-img-top"
+                  alt="500x325"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolo sit amet, consectetur adipisicing elit.
+                    Explicabo magni sapiente, tempore debitis beatae culpa natus
+                    architecto.
+                  </p>
+                </div>
+                <div
+                  class="container bg-secondary-subtle pt-2 pb-2 text-center"
+                >
+                  <a href="#" class="btn btn-primary">Find Out More!</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="assets/images/500х325.png"
+                  class="card-img-top"
+                  alt="500x325"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolo sit amet, consectetur adipisicing elit.
+                    Sapiente esse necessitatibus neque.
+                  </p>
+                </div>
+                <div
+                  class="container bg-secondary-subtle pt-2 pb-2 text-center"
+                >
+                  <a href="#" class="btn btn-primary">Find Out More!</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="assets/images/500х325.png"
+                  class="card-img-top"
+                  alt="500x325"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolo sit amet, consectetur adipisicing elit.
+                    Explicabo magni sapiente, tempore debitis beatae culpa natus
+                    architecto.
+                  </p>
+                </div>
+                <div
+                  class="container bg-secondary-subtle pt-2 pb-2 text-center"
+                >
+                  <a href="#" class="btn btn-primary">Find Out More!</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
     <footer>
-      <div class="footer-img4">
-        <img src="assets/images/perlamutr.png" class="img4" alt="perlamutr" />
+      <div class="container-fluid bg-dark text-light text-center pt-5 pb-1">
+        <p>Copyright &copy; Yoyr Website 2019</p>
       </div>
-      <div class="footer">
-        <p class="footer-p">
-          Лицензия на осуществление медицинской деятельности № ЛО-54-01-005831
-          от 05.03.2020 года. Стоматологическая клиника «ПЕРЛАМУТР» ООО
-          «ПЕРЛАМУТР», г. Новосибирск, 630049, ул. Красный проспект, 220 корп.
-          10 ИНН 5402020310, КПП 540201001, ОГРН 1165476122888 от 23.06.2016
-        </p>
-        <img src="assets/icons/вк.svg" class="img5" alt="вконтакте" />
-        <img src="assets/icons/инстаграм.svg" class="img5" alt="инстаграм" />
-        <img src="assets/icons/фейсбук.svg" class="img5" alt="фейсбук" />
-      </div>
-      <p class="p">Все права защищены © 2016 - 2022</p>
     </footer>
+
+    <script
+      src="assets/bootstrap/bootstrap.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
